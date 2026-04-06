@@ -1,0 +1,332 @@
+.body {
+background-color: black;
+color: aliceblue;
+margin: 0;
+padding: 0;
+}
+.nav-bar{
+    border: medium outset rgb(54, 50, 50);
+margin: 2%;
+height: 10%;
+display: flex;
+background-color: rgb(54, 50, 50);
+color: aliceblue;
+justify-content: space-between;
+}
+
+.nav-links a:hover{
+    color: red;
+}
+
+.header-container{
+     display: flex;
+    flex-direction: column; /* logo em cima, texto embaixo */
+    justify-content: flex-start; /* empurra pra cima */
+    align-items: center;
+
+}
+.logo{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;    /* centraliza horizontalmente */
+    text-decoration: none;  /* remove sublinhado */
+    list-style: none;
+}
+
+.logo-icon{
+font-size: 350%;
+margin-top: 0,2%;
+height: auto;
+
+}
+.logo-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;       /* tamanho menor */
+    margin-left: 5%;      /* afasta da margem esquerda */
+    color: #ddd;
+}
+
+.nav-links {
+   margin-right: 5%;
+   list-style: none;  /* remove as bolinhas */
+    padding: 0;        /* remove o recuo padrão da lista */
+}
+
+
+
+.nav-links a {
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+    font-size: larger;
+}
+.nav-links li{
+list-style: none;
+
+}
+
+.main{
+background-color: rgb(54, 50, 50);       /* cor da folha */
+    width: 80%;                  /* largura da folha */
+    height: 200vh;                 /* altura da folha (vertical) */
+    margin: 1% auto;             /* centraliza horizontalmente e espaço em cima/baixo */
+    margin-bottom: 1%;   
+    padding: 5%;        /* espaço interno proporcional */
+    text-align: center;    /* centraliza horizontalmente */    
+    box-shadow: 0 0.5em 5em rgba(179, 178, 178, 0.3);
+   
+}
+
+.main-title {
+    text-align: center;    /* centraliza horizontalmente */
+    font-size: 2rem;       /* tamanho do título */
+    margin-bottom: 3%;   /* espaço entre título e imagem */
+}
+
+.main img{
+display: block;     /* transforma em bloco */
+    height: auto;       /* mantém proporção */
+    margin: 5% auto;      /* centraliza horizontalmente e dá espaço em cima */
+    max-width: 90%;         /* nunca ultrapassa 90% da largura do main */
+
+}
+
+.main-text {
+    font-size: 1rem;
+    line-height: 1.5;      /* deixa o texto mais legível */
+    margin: 5% 10% auto;
+}
+
+.cursos {
+  display: flex;
+  gap: 2%; /* espaço proporcional */
+}
+
+.cursos a {
+  flex: 1; /* cada imagem ocupa o mesmo espaço */
+}
+
+.cursos img {
+    margin: 15% auto 0;
+    border-radius: 12px;
+  border: 2px solid #ddd;
+  width: 100%;   /* ocupa todo o espaço do link */
+  height: 250px; /* pode ajustar esse valor */
+  object-fit: cover;
+}
+
+.cursos img:hover {
+  border-color: red;
+}
+
+.cursos a {
+  position: relative;
+  display: block;
+  
+}
+
+.texto {
+  position: absolute;
+  bottom: 10px; /* fica na parte de baixo da imagem */
+  left: 10px;
+  
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  background: rgba(0, 0, 0, 0.6); /* fundo escuro transparente */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.footer{
+     position: relative;      /* referência para a imagem */
+    background-color: rgb(39, 36, 36);
+    width: 100%;
+    height: 50vh;
+    margin-top: 0;
+}
+
+.footer img{
+ position: absolute;      
+    bottom: 7%;             
+    right: 56%;               
+    width: 4%;              
+    height: auto;       
+}
+
+.footer a{
+position: absolute;      
+    bottom: 13%;             
+    right: 40%;               
+    width: 15%;    
+           color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+    font-size: larger;
+}
+
+.piramide{
+     margin: 0;
+}
+
+.piramide-title{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.conteudo-P{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.conteudo-P img{
+    width: 40%;
+    border-radius: 100%;
+}
+.agua{
+    margin: 5% 0;
+}
+
+.agua-title{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.conteudo-a{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    flex-direction: row-reverse;
+}
+
+.conteudo-a img{
+    width: 40%;
+    border-radius: 100%;
+}
+
+.sol{
+    margin: 5% 0;
+}
+
+.sol-title{
+    text-align: center;
+    font-size: 1.8rem;
+   margin-top: 0;
+    margin-bottom: 0;
+}
+
+.conteudo-s{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+
+.conteudo-s img{
+    width: 40%;
+    border-radius: 100%;
+}
+
+.formulario {
+    background-color: rgb(54, 50, 50);
+    padding: 30px;
+    width: 60%;
+    margin: 5% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-card {
+    background-color: rgb(54, 50, 50);
+    width: 60%;              /* largura relativa */
+    margin: 5% auto;         /* centraliza e espaçamento em cima/baixo */
+    padding: 2rem;           /* espaço interno proporcional */
+    border-radius: 1rem;     /* cantos arredondados relativos */
+    box-shadow: 0 0.3rem 2rem rgba(179, 178, 178, 0.3);
+}
+
+.form-card h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+/* Formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.form label {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+/* Inputs e textarea */
+.form input,
+.form textarea {
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box; /* importante para largura relativa */
+}
+
+/* Efeito ao focar */
+.form input:focus,
+.form textarea:focus {
+    box-shadow: 0 0 0.3rem red;
+}
+
+/* Textarea */
+.form textarea {
+    height: 8rem;
+    resize: none;
+}
+
+/* Botão */
+.form button {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover botão */
+.form button:hover {
+    background-color: darkred;
+}
+
+.olho{
+    outline: none; 
+    text-decoration: none;
+    color: inherit; 
+}
+.cor{
+    color: red;
+}
